@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements |</title>
+
+
+</head>
+
+<body>
+    <ol>
+        <p>Conditional construct </p>
+        <li><button onclick="funIf()">If</button></li>
+        <li><button onclick="funIfElse()">If else </button></li>
+        <li><button onclick="funIfElseif()">If else If</button></li>
+        <li><button onclick="funSwitch()">Switch</button></li>
+    </ol>
+        <hr>    
+       
+        <ol>
+            <p>Looping construct</p>
+        <a href="loops.html">For loop</a> <br>
+        <a href="forEachMethod.html">for Each method</a>
+        <a href="forInOF.html">for..in & for..of</a>
+    </ol>
+    <script>
+        function funIf() {
+            var a = 20;
+            if (a > 10) {
+                alert("value of a is greater than 10");
+            }
+        }
+        function funIfElse() {
+            var a = 20;
+            if (a % 2 == 0) {
+                alert("a is even number");
+            }
+            else {
+                alert("a is odd number");
+            }
+        }
+        function funIfElseif(){
+            var a=20;  
+if(a==10){  
+alert("a is equal to 10");  
+}  
+else if(a==15){  
+alert("a is equal to 15");  
+}  
+else if(a==20){  
+alert("a is equal to 20");  
+}  
+else{  
+alert("a is not equal to 10, 15 or 20");  
+}  
+
+        }
+        function funSwitch(){
+            
+                var grade='B';  
+                var result;  
+                switch(grade){  
+                case 'A':  
+                result="A Grade";  
+                break;  
+                case 'B':  
+                result="B Grade";  
+                break;  
+                case 'C':  
+                result="C Grade";  
+                break;  
+                default:  
+                result="No Grade";  
+                }  
+                alert(result);  
+ 
+        }
+    </script>
+</body>
+
+</html>

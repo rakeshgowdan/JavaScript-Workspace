@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript getElementsByName Demo</title>
+</head>
+<body>
+    <p>
+        How it works:
+<br>
+First, select the Rate button by its id btnRate using the getElementById() method.
+<br>
+Second, hook a click event to the Rate button so that when the button is clicked, an anonymous function is executed.
+<br>
+Third, call the getElementsByName() in the click event handler to select all radio buttons that have the name rate.
+<br>
+Finally, iterate over the radio buttons. If a radio button is checked, then display an alert that shows the value of the selected radio button.
+    </p>
+    <hr>
+    <p>Please rate the service:</p>
+    <p>
+        <input type="radio" name="rate" value="Very poor"> Very poor
+        <input type="radio" name="rate" value="Poor"> Poor
+        <input type="radio" name="rate" value="OK"> OK
+        <input type="radio" name="rate" value="Good"> Good
+        <input type="radio" name="rate" value="Very Good"> Very Good
+    </p>
+    <p>
+        <button id="btnRate">Submit</button>
+    </p>
+    <script>
+        let btn = document.getElementById('btnRate');
+
+        btn.addEventListener('click', () => {
+            let rates = document.getElementsByName('rate');
+            rates.forEach((rate) => {
+                if (rate.checked) {
+                    alert(`You rated: ${rate.value}`);
+                }
+            })
+        });
+    </script>
+</body>
+</html>

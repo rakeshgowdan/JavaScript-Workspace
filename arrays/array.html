@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays | examples</title>
+
+</head>
+
+<body>
+    <p>
+        <b> There are 3 ways to construct array in JavaScript</b>
+    <ul>
+        <li>By array literal</li>
+        <li>By creating instance of Array directly (using new keyword)</li>
+        <li>By using an Array constructor (using new keyword)</li>
+    </ul>
+    <p>array  emp = ["Ram", "Alok", "Ratan"]</p>
+    <button onclick="arrayConcat()">Array concat</button>
+    <button onclick="arraySort()">Array Sort</button>
+    <button onclick="arrayReverse()">Array reverse</button>
+    </p>
+
+    <script>
+        var emp = ["Ram", "Alok", "Ratan"];
+        for (i = 0; i < emp.length; i++) {
+            document.write(emp[i] + "<br/>");
+        }  
+        function arrayConcat(){
+            var arr1=["C","C++","Python"];  
+            var arr2=["Java","JavaScript","Android"];  
+            var result=arr1.concat(arr2);  
+            document.writeln(result);
+        }
+        function arraySort(){
+                var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
+                var result=arr.sort();  
+                document.writeln(result);  
+        }
+        function arrayReverse(){
+            var arr=["AngulaJS","Node.js","JQuery"];  
+            var rev=arr.reverse();  
+            document.writeln(rev); 
+        }
+    </script>
+</body>
+
+</html>
